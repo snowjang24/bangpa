@@ -13,7 +13,7 @@ const StudyGroup = () => {
   const getGroupList = async () => {
     const res = await fetch("http://localhost:1024/data/groupinfo");
     const data = await res.json();
-    setGroupList(data.groupList);
+    await setGroupList(JSON.parse(data).groupPost_info);
   };
   const handleCreateBtn = () => {
     window.location.href = "/newgroup";

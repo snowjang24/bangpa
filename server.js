@@ -1,8 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const path = require("path");
-const fs = require("fs");
 const bodyParser = require("body-parser");
+const fs = require("fs");
 
 const Bangpa_System = require("./server-side/BangpaSystem");
 
@@ -22,22 +21,17 @@ app.get("/newgroup", (req, res) => {
 });
 
 app.get("/data/groupinfo", (req, res) => {
-  fs.readFile("./data/group_info.json", "utf8", (err, data) => {
-    res.json(JSON.parse(data));
+  fs.readFile(__dirname + "/data/groupPost_info.json", "utf8", (err, data) => {
+    res.json(data);
     return;
   });
 });
 
 app.post("/data/groupinfo", (req, res) => {
-  const groupInfoDBPath = "./data/group_info.json";
-  const newGroupData = req.body;
-  const groupInfoDB = JSON.parse(fs.readFileSync(groupInfoDBPath, "utf8"));
-
-  groupInfoDB.groupList = [...groupInfoDB.groupList, newGroupData];
-
-  fs.writeFileSync(groupInfoDBPath, JSON.stringify(groupInfoDB), e =>
-    console.log(e)
-  );
+  const { title, summary, category, region, leaderID } = req.body;
+  bangpaSystem.enterGroupInfo({ title, category, summary, region, leaderID });
+  const message = bangpaSystem.endMakingGroup();
+  res.json({ message });
 });
 
 app.post("/signup", (req, res) => {

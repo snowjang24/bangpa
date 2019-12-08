@@ -5,12 +5,27 @@ class Bangpa_System {
     this.groupRegistration;
   }
   makeNewGroup() {
-    this.groupRegistration = this.createGroupRegistration();
-    const studyGroup = groupRegistration.createStudyGroup();
+    this.createGroupRegistration();
+    this.groupRegistration.createStudyGroup();
+    console.log("Operation.01 Completed");
   }
 
   createGroupRegistration() {
-    return new Group_Registration();
+    this.groupRegistration = new Group_Registration();
+  }
+
+  enterGroupInfo({ title, category, summary, region, leaderID }) {
+    this.groupRegistration.setGroupInfo({
+      title,
+      category,
+      summary,
+      region,
+      leaderID
+    });
+    console.log("Operation.02 Completed");
+  }
+  endMakingGroup() {
+    return this.groupRegistration.updatePost();
   }
 }
 

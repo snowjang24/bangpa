@@ -16,8 +16,7 @@ const options = {
 };
 
 const NewStudyGroup = () => {
-  const [groupData, setGroupData] = useState(null);
-
+  const [groupData, setGroupData] = useState();
   useEffect(() => {
     fetch("http://localhost:1024/newgroup", {
       method: "GET"
@@ -29,12 +28,18 @@ const NewStudyGroup = () => {
   };
 
   const handleCreatePost = async () => {
-    await fetch("http://localhost:1024/data/groupinfo", {
+    const res = await fetch("http://localhost:1024/data/groupinfo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(groupData),
+      body: JSON.stringify({
+        ...groupData,
+        leaderID: Math.floor(Math.random() * (100000000 - 1) + 1)
+      }),
       redirect: "manual"
     });
+    const data = await res.json();
+    alert(data.message);
+    window.location.href = "/studygroup";
   };
 
   return (

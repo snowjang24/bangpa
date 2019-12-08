@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Button,
   Header,
@@ -9,11 +9,16 @@ import {
 } from "semantic-ui-react";
 
 const Login = () => {
+  const [userData, setUserData] = useState("");
+
   const handleLogin = () => {
+    console.log(userData);
     window.location.href = "/studygroup";
   };
 
-  //   const handleChange = (e, { name, value }) => this.setState({ [name]: value });
+  const handleChange = (e, { name, value }) => {
+    setUserData({ ...userData, [name]: value });
+  };
 
   return (
     <div className="login">
@@ -33,6 +38,8 @@ const Login = () => {
                 icon="user"
                 iconPosition="left"
                 placeholder="User Id"
+                name="user_id"
+                onChange={handleChange}
               />
               <Form.Input
                 fluid
@@ -40,6 +47,8 @@ const Login = () => {
                 iconPosition="left"
                 placeholder="Password"
                 type="password"
+                name="user_pw"
+                onChange={handleChange}
               />
 
               <Button color="blue" fluid size="large" onClick={handleLogin}>
