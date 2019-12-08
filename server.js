@@ -4,13 +4,12 @@ const path = require("path");
 const fs = require("fs");
 const bodyParser = require("body-parser");
 
+const Bangpa_System = require("./server-side/BangpaSystem");
+
 const app = express();
 const port = process.env.PORT || 1024;
 
-const Bangpa_System = require("./server-side/BangpaSystem");
-
 const bangpaSystem = new Bangpa_System();
-
 const corsOptions = {
   origin: "http://localhost:3000"
 };

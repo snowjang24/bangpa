@@ -14,4 +14,4 @@ class Bangpa_System {
   }
 }
 
-module.export = Bangpa_System;
+module.exports = Bangpa_System;
