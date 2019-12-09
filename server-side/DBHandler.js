@@ -29,6 +29,7 @@ class DBHandler {
       JSON.stringify(existDB),
       e => console.log(e)
     );
+    return "success";
   }
 }
 module.exports = DBHandler;

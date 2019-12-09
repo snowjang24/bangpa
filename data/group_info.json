@@ -1,1 +1,18 @@
-{"group_info":[{"leaderID":14426412,"studyGroupID":"uH89DAmb"},{"leaderID":52617206,"studyGroupID":"lPAN9RUU"},{"leaderID":60889434,"studyGroupID":"Qs48NdXf"},{"leaderID":81543152,"studyGroupID":"_bCMoW_k"},{"leaderID":57504182,"studyGroupID":"qwi_p5HG"}]}
+{
+  "group_info": [
+    { "leaderID": 52617206, "studyGroupID": "lPAN9RUU" },
+    {
+      "leaderID": 60889434,
+      "studyGroupID": "Qs48NdXf",
+      "member": [
+        { "name": "Helen" },
+        { "name": "Christian" },
+        { "name": "Daniel" }
+      ]
+    },
+    { "leaderID": 81543152, "studyGroupID": "_bCMoW_k" },
+    { "leaderID": 57504182, "studyGroupID": "qwi_p5HG" },
+    { "leaderID": 56691305, "studyGroupID": "Vtymyzdw" },
+    { "leaderID": 9109902, "studyGroupID": "w8tNPJFB" }
+  ]
+}

@@ -11,7 +11,7 @@ const StudyGroup = () => {
   }, []);
 
   const getGroupList = async () => {
-    const res = await fetch("http://localhost:1024/data/groupinfo");
+    const res = await fetch("http://localhost:1024/data/grouppostinfo");
     const data = await res.json();
     await setGroupList(JSON.parse(data).groupPost_info);
   };

@@ -28,7 +28,7 @@ const NewStudyGroup = () => {
   };
 
   const handleCreatePost = async () => {
-    const res = await fetch("http://localhost:1024/data/groupinfo", {
+    const res = await fetch("http://localhost:1024/data/grouppostinfo", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
