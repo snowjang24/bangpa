@@ -1,1 +1,14 @@
-{"user_info":[{"memberID":"92253969","gradePoint":4,"gradeComments":"wqeqweqw"},{"memberID":"65733246","gradePoint":5,"gradeComments":"dsadasdsa"},{"memberID":"1589705","gradePoint":5,"gradeComments":"dadsd"},{"memberID":"37490318","gradePoint":5,"gradeComments":"dsds"},{"memberID":"65669826","gradeComments":""},{"memberID":"96836989","gradePoint":4,"gradeComments":"dadsad"},{"memberID":"98734627","gradePoint":4,"gradeComments":"dasds"},{"memberID":"16716343","gradePoint":4,"gradeComments":"asdasdas"}]}
+{
+  "user_info": [
+    { "memberID": "92253969", "gradePoint": 4, "gradeComments": "wqeqweqw" },
+    { "memberID": "65733246", "gradePoint": 5, "gradeComments": "dsadasdsa" },
+    { "memberID": "1589705", "gradePoint": 5, "gradeComments": "dadsd" },
+    { "memberID": "37490318", "gradePoint": 5, "gradeComments": "dsds" },
+    { "memberID": "65669826", "gradeComments": "" },
+    { "memberID": "96836989", "gradePoint": 4, "gradeComments": "dadsad" },
+    { "memberID": "98734627", "gradePoint": 4, "gradeComments": "dasds" },
+    { "memberID": "16716343", "gradePoint": 4, "gradeComments": "asdasdas" },
+    { "memberID": "9852741", "gradePoint": 5, "gradeComments": "dadasdas" },
+    { "memberID": "19474099", "gradePoint": 3, "gradeComments": "dasdasd" }
+  ]
+}
