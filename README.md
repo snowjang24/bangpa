@@ -24,6 +24,8 @@ Execute react on http://localhost:3000/, listen on 3000 port you can also change
 npm start
 ```
 
+![react](./images/react.gif)
+
 #### For Node.js Execution
 
 Execute node on http://localhost:1024/, listen on 1024 port you can also change port whatever you wants
@@ -32,8 +34,13 @@ Execute node on http://localhost:1024/, listen on 1024 port you can also change 
 node server.js
 ```
 
+![node](./images/node.gif)
+
 ### After Execution
 
 After Installation and Execution phase, you can access to our Bangpa service at http://localhost:3000/
 
 ## Enjoy Bangpa Service! 👋
+
+
+![login](./images/login.gif)
